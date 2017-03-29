@@ -20,4 +20,4 @@ http://${ip}:${port}
 ## How to build
 > npm run build
 
-This will build out a standalone nodejs file and can be executed with `node`
+This will build out a standalone nodejs file in `dist/remote-console-service.js` and can be executed with `node`
