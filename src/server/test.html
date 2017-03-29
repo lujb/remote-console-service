@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <title>test remote console</title>
+    <script type="text/javascript" src="/remote-console.js"></script>
+  </head>
+  <body>
+    <p>current console logs will send to Remote Console Service...</p>
+    <script>
+      (function() {
+        var f, a, o
+        f = function() {
+          return 'function return'
+        }
+        a = [1, 2, f, o ,3]
+        o = {
+          id: 31,
+          func: f,
+          arr: a,
+          undef: undefined,
+          nil: null,
+          name: 'bobo'
+        }
+        o.self = o
+        console.log('object:', o)
+        console.log('function:', f)
+        console.log('array:', a)
+        console.log('remote logs will arrive in 5 senconds.')
+
+        setTimeout(() => {
+          console.log(true, 123, 'hello', null, undefined, f, o, [1,2,f,3])
+          console.info(true, 123, 'hello', null, undefined, f, o, [1,2,f,3])
+          console.warn(true, 123, 'hello', null, undefined, f, o, [1,2,f,3])
+          console.error(true, 123, 'hello', null, undefined, f, o, [1,2,f,3])
+        }, 5000)
+      })()
+    </script>
+  </body>
+</html>

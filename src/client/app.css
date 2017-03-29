@@ -1,0 +1,45 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-size: 10px;
+}
+
+.listWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 100%;
+}
+
+.consoleWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.console {
+  display: flex;
+  flex-direction: row;
+  color: green;
+  border: 1px solid green;
+  margin-bottom: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.console:hover {
+  background-color: green;
+  color: black;
+  cursor: pointer;
+}
+
+.console:active {
+  background-color: gold;
+  color: black;
+}

@@ -1,0 +1,30 @@
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.toolbar div {
+  margin-left: 10px;
+  background-color: black;
+  border: 1px solid green;
+  color: green;
+  padding: 1px 8px;
+  font-size: 60%;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.toolbar div:hover {
+  background-color: green;
+  color: black;
+  cursor: pointer;
+}
+
+.toolbar div:active {
+  background-color: gold;
+  color: black;
+}

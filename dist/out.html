@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="A local service for inspecting remote console logs"/>
+    <meta name="author" content="lujb"/>
+    <meta name="version" content="1.0.0"/>
+    <title>Remote Console</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: black;
+        color: grey;
+        font-family: Consolas, "Courier New";
+        margin: 0px;
+        padding: 0px;
+      }
+      #header {
+        display: flex;
+        align-self: stretch;
+        justify-content: space-around;
+      }
+      #header-right {
+        display: flex;
+      }
+      #header-right div {
+        margin-left: 15px;
+      }
+      a:link {
+        color: green;
+      }
+      a:visited {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <div id='header-left'>
+        Note: The value of `null` / `undefined` / `function` will be outputed as null
+      </div>
+      <div id='header-right'>
+        <div><a target="_blank" href="/test">Test</a></div>
+        <div><a target="_blank" href="/remote-console.js">Download</a></div>
+        <div>v1.0.0</div>
+      </div>
+    </div>
+    <div id="main"></div>
+  <script type="text/javascript" src="client.bundle.js"></script></body>
+</html>

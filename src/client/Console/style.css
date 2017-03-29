@@ -1,0 +1,107 @@
+.console {
+  flex-grow: 1;
+  padding: 2px;
+  /*display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;;*/
+  background-color: black;
+  border: 1px solid green;
+  font-family: Consolas, "Courier New";
+  overflow: auto;
+  height: 100%;
+}
+
+.line {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2px;
+}
+
+.gutter-log {
+  display: flex;
+  align-items: center;
+  background-color: silver;
+  color: darkslategrey;
+}
+
+.gutter-info {
+  display: flex;
+  align-items: center;
+  background-color: dodgerblue;
+  color: darkslategrey;
+}
+
+.gutter-warn {
+  display: flex;
+  align-items: center;
+  background-color: gold;
+  color: darkslategrey;
+}
+
+.gutter-error {
+  display: flex;
+  align-items: center;
+  background-color: crimson;
+  color: darkslategrey;
+}
+
+.content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.item {
+  display: flex;
+}
+
+.space {
+  width: 5px;
+}
+
+.number {
+  color: lime;
+}
+
+.string {
+  color: ivory;
+}
+
+.boolean {
+  color: magenta;
+}
+
+.null {
+  color: deeppink;
+}
+
+.array {
+  color: deepskyblue;
+}
+
+.object {
+  color: cyan;
+}
+
+.object pre {
+  font-family: Consolas, "Courier New";
+  background-color: green;
+  color: white;
+}
+
+.object-indicator {
+  color: green;
+  font-size: 8px;
+  font-style: italic;
+  border-right: 1px dashed white;
+  margin-right: 1px;
+  padding-right: 1px;
+  cursor: pointer;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
